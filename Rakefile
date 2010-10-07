@@ -19,7 +19,6 @@ end
 dotfiles.each do |source|
   local_copy = source.sub(home_dir, dotfiles_dir)
   file local_copy => source do
-    puts local_copy
     unless local_copy.parent.directory?
       mkdir local_copy.parent
     end
@@ -27,4 +26,14 @@ dotfiles.each do |source|
   end
   desc "imports dotfiles from home dir"
   task :import => local_copy
+end
+
+task :overwrite do
+  dotfiles.each do |target|
+    local_copy = target.sub(home_dir, dotfiles_dir)
+    unless target.parent.directory?
+      mkdir target.parent
+    end
+    cp local_copy, target, :verbose => true
+  end
 end
