@@ -1,0 +1,23 @@
+[general]
+accounts = GMail
+maxsyncaccounts = 3
+
+[Account GMail]
+localrepository = Local
+remoterepository = Remote
+
+[Repository Local]
+type = Maildir
+localfolders = /Users/scyldinga/Mail/Gmail
+
+[Repository Remote]
+type = IMAP
+remotehost = imap.gmail.com
+remoteuser = skiold@gmail.com
+ssl = yes
+maxconnections = 1
+
+#Setting realdelete = yes will Really Delete email from the server.
+#Otherwise "deleting" a message will just remove any labels and 
+#retain the message in the All Mail folder.
+realdelete = no

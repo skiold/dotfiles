@@ -2,6 +2,7 @@ require 'pathname'
 
 dotfiles = FileList[
                  ".irssi/config",
+                 ".offlineimaprc",
              ].map do |dotfile_path|
   full_path = Pathname.new "~/" + dotfile_path
   full_path.expand_path
