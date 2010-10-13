@@ -68,6 +68,7 @@ channels = (
   { name = "#irssi"; chatnet = "ircnet"; autojoin = "No"; },
   { name = "#infra-talk"; chatnet = "Freenode"; autojoin = "yes"; },
   { name = "#madrid.pm"; chatnet = "perl"; autojoin = "yes"; }
+  { name = "#hispalinux" chatnet = "Freenode"; autojoin = "No"; },
 );
 
 aliases = {
