@@ -2,6 +2,7 @@ require 'pathname'
 
 dotfiles = FileList[
                  ".irssi/config",
+                 ".vimrc",
              ].map do |dotfile_path|
   full_path = Pathname.new "~/" + dotfile_path
   full_path.expand_path
@@ -28,7 +29,7 @@ dotfiles.each do |source|
   task :import => local_copy
 end
 
-task :overwrite do
+task :export_to_homedir do
   dotfiles.each do |target|
     local_copy = target.sub(home_dir, dotfiles_dir)
     unless target.parent.directory?
