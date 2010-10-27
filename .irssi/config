@@ -69,6 +69,7 @@ channels = (
   { name = "#infra-talk"; chatnet = "Freenode"; autojoin = "yes"; },
   { name = "##xen"; chatnet = "Freenode"; autojoin = "yes"; },
   { name = "#xen-api"; chatnet = "Freenode"; autojoin = "yes"; },
+  { name = "#citrix"; chatnet = "Freenode"; autojoin = "yes"; },
   { name = "#madrid.pm"; chatnet = "perl"; autojoin = "yes"; }
   { name = "#hispalinux" chatnet = "Freenode"; autojoin = "No"; },
 );
