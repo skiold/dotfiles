@@ -1,19 +1,32 @@
 [general]
-accounts = GMail
+accounts = GMail, Ageda
 maxsyncaccounts = 3
 
 [Account GMail]
 localrepository = Local
 remoterepository = Remote
 
+[Account Ageda]
+localrepository = ageda_local
+remoterepository = ageda_remote
+
 [Repository Local]
 type = Maildir
-localfolders = /Users/scyldinga/Mail/Gmail
+localfolders = ~/Mail/Gmail
+
+[Repository ageda_local]
+type = Maildir
+localfolders = ~/Mail/Ageda
 
 [Repository Remote]
 type = IMAP
 remotehost = imap.gmail.com
-remoteuser = skiold@gmail.com
+ssl = yes
+maxconnections = 1
+
+[Repository ageda_remote]
+type = IMAP
+remotehost = imap.gmail.com
 ssl = yes
 maxconnections = 1
 
