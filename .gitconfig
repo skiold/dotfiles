@@ -1,0 +1,15 @@
+[user]
+	name = Adrian Silva
+	email = adrian@ageda.net
+[color]
+	ui = auto
+	diff = auto
+	status = auto
+	branch = auto
+[alias]
+	co = checkout
+	branch-graph = log --graph --pretty=oneline --abbrev-commit
+[merge]
+	tool = opendiff
+[push]
+	default = current
