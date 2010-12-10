@@ -1,0 +1,25 @@
+--- 
+:confirm_top_posting: true
+:ask_for_to: true
+:editor: /usr/bin/vim -f -c 'setlocal spell spelllang=en_us' -c 'set filetype=mail'
+:jump_to_open_message: true
+:accounts: 
+  :default: 
+    :sendmail: /usr/sbin/sendmail -oem -ti
+    :alternates: 
+    - skiold@gmail.com
+    - adrian@bvox.net
+    :name: Adrian
+    :email: adrian@ageda.net
+    :signature: /Users/scyldinga/.signature
+:sent_source: sup://sent
+:ask_for_cc: true
+:discard_snippets_from_encrypted_messages: false
+:ask_for_bcc: false
+:default_attachment_save_dir: ""
+:ask_for_subject: true
+:thread_by_subject: false
+:poll_interval: 300
+:confirm_no_attachments: true
+:edit_signature: false
+:wrap_width: 0
