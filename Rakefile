@@ -6,6 +6,7 @@ dotfiles = FileList[
                  ".offlineimaprc",
                  ".sup/config.yaml",
                  ".signature",
+                 ".msmtprc",
              ].map do |dotfile_path|
   full_path = Pathname.new "~/" + dotfile_path
   full_path.expand_path

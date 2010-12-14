@@ -5,15 +5,18 @@
 :jump_to_open_message: true
 :accounts: 
   :default: 
-    :sendmail: /usr/sbin/sendmail -oem -ti
+    :name: Adrian Silva
     :alternates: 
     - skiold@gmail.com
     - adrian@bvox.net
-    :name: Adrian
     :email: adrian@ageda.net
     :signature: /Users/scyldinga/.signature
+  :Ageda:
+    :email: adrian@ageda.net
+    :sendmail: msmtp --account=Ageda -t
 :sent_source: sup://sent
 :ask_for_cc: true
+:ask_for_from: true
 :discard_snippets_from_encrypted_messages: false
 :ask_for_bcc: false
 :default_attachment_save_dir: ""
