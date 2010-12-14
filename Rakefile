@@ -1,6 +1,7 @@
 require 'pathname'
 
 dotfiles = FileList[
+                 ".bashrc",
                  ".irssi/config",
                  ".vimrc",
                  ".offlineimaprc",
