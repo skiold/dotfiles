@@ -17,13 +17,16 @@ if [ "$PS1" ]; then
 
 
     #alias de seguridad:
-	alias rm='rm -i '
-	alias cp='cp -i '
-	alias mv='mv -i '
-    
-	alias ssh-add='/usr/bin/ssh-add'
-    # set a fancy prompt
+    alias rm='rm -i '
+    alias cp='cp -i '
+    alias mv='mv -i '
 
+    alias ssh-add='/usr/bin/ssh-add'
+
+    # enable local install of rvm ruby manager
+    [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
+
+    # set a fancy prompt
     PS1='\u@\h:\w() '
 
     # git thingies
