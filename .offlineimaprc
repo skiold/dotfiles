@@ -5,10 +5,14 @@ maxsyncaccounts = 3
 [Account GMail]
 localrepository = Local
 remoterepository = Remote
+autorefresh = 30
+quick = 2
 
 [Account Ageda]
 localrepository = ageda_local
 remoterepository = agedaremote
+autorefresh = 15
+quick = 3
 
 [Repository Local]
 type = Maildir
@@ -24,6 +28,7 @@ remotehost = imap.gmail.com
 remoteuser = skiold@gmail.com
 ssl = yes
 maxconnections = 1
+realdelete = true
 
 [Repository agedaremote]
 type = Gmail
@@ -31,8 +36,4 @@ remotehost = imap.gmail.com
 remoteuser = adrian@ageda.net
 ssl = yes
 maxconnections = 1
-
-#Setting realdelete = yes will Really Delete email from the server.
-#Otherwise "deleting" a message will just remove any labels and 
-#retain the message in the All Mail folder.
-realdelete = no
+realdelete = true
