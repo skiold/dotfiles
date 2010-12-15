@@ -5,6 +5,7 @@
 :jump_to_open_message: true
 :accounts: 
   :default: 
+    :sendmail: msmtp --account=Ageda -t
     :name: Adrian Silva
     :alternates: 
     - skiold@gmail.com
