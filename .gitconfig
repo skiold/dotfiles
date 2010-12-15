@@ -1,3 +1,6 @@
+[core]
+	excludesfile = "/Users/scyldinga/.gitignore"
+
 [user]
 	name = Adrian Silva
 	email = adrian@ageda.net
