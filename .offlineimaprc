@@ -19,14 +19,14 @@ type = Maildir
 localfolders = ~/Mail/Ageda
 
 [Repository Remote]
-type = IMAP
+type = Gmail 
 remotehost = imap.gmail.com
 remoteuser = skiold@gmail.com
 ssl = yes
 maxconnections = 1
 
 [Repository agedaremote]
-type = IMAP
+type = Gmail
 remotehost = imap.gmail.com
 remoteuser = adrian@ageda.net
 ssl = yes
