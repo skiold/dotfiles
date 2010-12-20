@@ -6,6 +6,7 @@ dotfiles = FileList[
                  ".vimrc",
                  ".offlineimaprc",
                  ".sup/config.yaml",
+                 ".sup/colors.yaml",
                  ".signature",
                  ".msmtprc",
              ].map do |dotfile_path|
