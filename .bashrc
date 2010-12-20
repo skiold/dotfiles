@@ -31,6 +31,8 @@ if [ "$PS1" ]; then
 
     # git thingies
     . ~/.git-completion.bash
+    TERM="linux"
+    export TERM
     PS1='$(__git_ps1 "|%s|")@\h:\W() '
 fi
 
