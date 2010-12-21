@@ -7,6 +7,7 @@ dotfiles = FileList[
                  ".offlineimaprc",
                  ".sup/config.yaml",
                  ".sup/colors.yaml",
+                 ".sup/hooks/before-add-message.rb",
                  ".signature",
                  ".msmtprc",
              ].map do |dotfile_path|
