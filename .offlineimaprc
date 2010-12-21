@@ -29,6 +29,7 @@ remoteuser = skiold@gmail.com
 ssl = yes
 maxconnections = 1
 realdelete = true
+folderfilter = lambda foldername: foldername in ['[Gmail]/All Mail', '[Gmail]/Sent Mail']
 
 [Repository agedaremote]
 type = Gmail
@@ -37,3 +38,4 @@ remoteuser = adrian@ageda.net
 ssl = yes
 maxconnections = 1
 realdelete = true
+folderfilter = lambda foldername: foldername in ['[Gmail]/All Mail', '[Gmail]/Sent Mail']
