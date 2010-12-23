@@ -3,6 +3,7 @@ require 'pathname'
 dotfiles = FileList[
                  ".bashrc",
                  ".bashrc.d/rvm.bash",
+                 ".bash_profile",
                  ".irssi/config",
                  ".vimrc",
                  ".offlineimaprc",

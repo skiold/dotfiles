@@ -30,7 +30,19 @@ if [ "$PS1" ]; then
     . ~/.git-completion.bash
     TERM="linux"
     export TERM
-    PS1='$(__git_ps1 "|%s|")@\h:\W() '
+
+
+    export SESSION_NAME="tarena"
+    greenonwhite="\E[32;47m"
+    PROMPT_COMMAND='rvm=$([[ -x ~/.rvm/bin/rvm-prompt ]] && ~/.rvm/bin/rvm-prompt i v p g s);\
+                    echo -ne "\033]0;${SESSION_NAME}|\
+rvm:$rvm|\
+$(__git_ps1 "branch:%s")|\
+$(date "+%y%m%d %H:%M")\
+\007";\
+                    echo -e "${greenonwhite}$PWD\033[0m"'
+
+    PS1='\u@\h '
 
     for extrarc in ~/.bashrc.d/*.bash ; do
 	. ${extrarc}
