@@ -23,9 +23,6 @@ if [ "$PS1" ]; then
 
     alias ssh-add='/usr/bin/ssh-add'
 
-    # enable local install of rvm ruby manager
-    [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
-
     # set a fancy prompt
     PS1='\u@\h:\w() '
 
@@ -34,5 +31,9 @@ if [ "$PS1" ]; then
     TERM="linux"
     export TERM
     PS1='$(__git_ps1 "|%s|")@\h:\W() '
+
+    for extrarc in ~/.bashrc.d/*.bash ; do
+	. ${extrarc}
+    done
 fi
 
