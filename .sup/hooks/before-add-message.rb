@@ -9,6 +9,8 @@ end
  "puppet-dev" => "List-ID: <puppet-dev\.googlegroups\.com>",
  "puppet-users" => "List-ID: <puppet-users\.googlegroups\.com>",
  "chef" => "List-Id: <chef\.lists\.opscode\.com>",
+ "twisted-web" => "List-Id: Twisted Web World <twisted-web\.twistedmatrix\.com>",
+ "twisted-python" => "List-Id: Twisted general discussion <twisted-python\.twistedmatrix\.com>",
  }.each_pair do |list_label, list_regex| 
   if message.raw_header =~ /#{list_regex}/i
     message.add_label "list"
