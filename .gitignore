@@ -1,0 +1,4 @@
+.DS_Store
+*~
+*.pyc
+*.sw[0-9a-zA-Z]

@@ -4,6 +4,8 @@ dotfiles = FileList[
                  ".bashrc",
                  ".bashrc.d/rvm.bash",
                  ".bash_profile",
+                 ".gitconfig",
+                 ".gitignore",
                  ".irssi/config",
                  ".vimrc",
                  ".offlineimaprc",
@@ -46,4 +48,8 @@ task :export_to_homedir do
     end
     cp local_copy, target, :verbose => true
   end
+end
+
+task :bootstrap_devel_env do
+  sh 'bash -c "$(curl http://rvm.beginrescueend.com/releases/rvm-install-head)"' 
 end
