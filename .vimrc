@@ -4,4 +4,18 @@ set wmh=0
 
 set expandtab shiftwidth=2 tabstop=2
 
+set ai
+
 syntax on
+filetype on
+filetype indent on
+
+set nobackup
+set number
+set ruler
+
+set hlsearch
+set incsearch
+set showmatch
+
+
