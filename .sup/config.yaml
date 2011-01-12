@@ -15,6 +15,9 @@
   :Ageda:
     :email: adrian@ageda.net
     :sendmail: msmtp --account=Ageda -t
+  :Skiold:
+    :email: skiold@gmail.com
+    :sendmail: msmtp --account=personalgmail -t
 :sent_source: sup://sent
 :ask_for_cc: true
 :ask_for_from: true
