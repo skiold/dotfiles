@@ -15,12 +15,12 @@
 [merge]
 	tool = suremerge
 [mergetool "suremerge"]
-	cmd = "\"Applications/guiffy93/guiffyCL.command\" -s \"$LOCAL\" \"$REMOTE\" \"$BASE\" \"$MERGED\""
+	cmd = "\"/Applications/guiffy93/guiffyCL.command\" -s \"$LOCAL\" \"$REMOTE\" \"$BASE\" \"$MERGED\""
 	keepBackup = false
 	trustExitCode = false
 [diff]
 	tool = guiffy
 [difftool "guiffy"]
-	cmd  = "\"Applications/guiffy93/guiffyCL.command\" \"$LOCAL\" \"$REMOTE\""
+	cmd  = "\"/Applications/guiffy93/guiffyCL.command\" \"$LOCAL\" \"$REMOTE\""
 [push]
 	default = current
