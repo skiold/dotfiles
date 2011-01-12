@@ -14,6 +14,7 @@ dotfiles = FileList[
                  ".sup/hooks/before-add-message.rb",
                  ".signature",
                  ".msmtprc",
+                 ".gnupg/gpg.conf",
              ].map do |dotfile_path|
   full_path = Pathname.new "~/" + dotfile_path
   full_path.expand_path
