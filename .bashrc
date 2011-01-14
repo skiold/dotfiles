@@ -44,8 +44,8 @@ $(date "+%y%m%d %H:%M")\
 
     PS1='\u@\h '
 
-    for extrarc in ~/.bashrc.d/*.bash ; do
-	. ${extrarc}
+    for extra_rc in ~/.bashrc.d/*.bash ; do
+        source ${extra_rc}
     done
 fi
 
