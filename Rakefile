@@ -3,6 +3,7 @@ require 'pathname'
 dotfiles = FileList[
                  ".bashrc",
                  ".bashrc.d/rvm.bash",
+                 ".bashrc.d/perlbrew.bash",
                  ".bash_profile",
                  ".gitconfig",
                  ".gitignore",
