@@ -72,6 +72,8 @@ channels = (
   { name = "#citrix"; chatnet = "Freenode"; autojoin = "yes"; },
   { name = "#madrid.pm"; chatnet = "perl"; autojoin = "yes"; },
   { name = "#hispalinux"; chatnet = "Freenode"; autojoin = "No"; }
+  { name = "#babushka"; chatnet = "Freenode"; autojoin = "yes"; }
+  { name = "#emerging-threats"; chanten = "Freenode"; autojoin = "No"; }
 );
 
 aliases = {
