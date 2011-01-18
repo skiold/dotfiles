@@ -9,6 +9,7 @@ dotfiles = FileList[
                  ".irssi/config",
                  ".vimrc",
                  ".offlineimaprc",
+                 ".rvm/gemsets/default.gems",
                  ".sup/config.yaml",
                  ".sup/colors.yaml",
                  ".sup/hooks/before-add-message.rb",
