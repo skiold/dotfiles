@@ -3,9 +3,11 @@
 if message.list_address != nil
   message.add_label "list"
 end
-{"linux-um" => "List-Id: <linux\.listas\.um\.es>",
+{"agile-spain" => "List-ID: <agile-spain.googlegroups.com>",
+ "linux-um" => "List-Id: <linux\.listas\.um\.es>",
  "lonely-coaches" => "<lonely-coaches-sodality.googlegroups.com>",
  "madrid-pm" => 'List-Id: Lista de correo de Madrid Perl Mongers <madrid-pm\.pm\.org>',
+ "madrid-devops" => "List-ID: <madrid-devops\.googlegroups\.com>",
  "puppet-dev" => "List-ID: <puppet-dev\.googlegroups\.com>",
  "puppet-users" => "List-ID: <puppet-users\.googlegroups\.com>",
  "chef" => "List-Id: <chef\.lists\.opscode\.com>",
