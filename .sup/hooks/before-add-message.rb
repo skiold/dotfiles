@@ -4,10 +4,13 @@ if message.list_address != nil
   message.add_label "list"
 end
 {"agile-spain" => "List-ID: <agile-spain.googlegroups.com>",
+ "curvecp" => "Mailing-List: contact curvecp-help@list.cr.yp.to; run by ezmlm",
+ "exherbo-dev" => "List-Id: <exherbo-dev.lists.exherbo.org>",
  "linux-um" => "List-Id: <linux\.listas\.um\.es>",
  "lonely-coaches" => "<lonely-coaches-sodality.googlegroups.com>",
  "madrid-pm" => 'List-Id: Lista de correo de Madrid Perl Mongers <madrid-pm\.pm\.org>',
  "madrid-devops" => "List-ID: <madrid-devops\.googlegroups\.com>",
+ "mcollective-users" => "List-ID: <mcollective-users.googlegroups.com>",
  "puppet-dev" => "List-ID: <puppet-dev\.googlegroups\.com>",
  "puppet-users" => "List-ID: <puppet-users\.googlegroups\.com>",
  "chef" => "List-Id: <chef\.lists\.opscode\.com>",
