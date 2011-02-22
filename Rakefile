@@ -8,6 +8,7 @@ dotfiles = FileList[
                  ".gitconfig",
                  ".gitignore",
                  ".irssi/config",
+                 ".mrconfig",
                  ".vimrc",
                  ".offlineimaprc",
                  ".rvm/gemsets/default.gems",
