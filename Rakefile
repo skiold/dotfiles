@@ -2,6 +2,7 @@ require 'pathname'
 
 dotfiles = FileList[
                  ".bashrc",
+                 ".bashrc.d/homebrew.bash",
                  ".bashrc.d/rvm.bash",
                  ".bashrc.d/perlbrew.bash",
                  ".bash_profile",
