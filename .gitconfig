@@ -1,27 +1,27 @@
 [core]
-	excludesfile = "/Users/scyldinga/.gitignore"
+  excludesfile = "/Users/scyldinga/.gitignore"
 
 [user]
-	name = Adrian Silva
-	email = adrian@ageda.net
+  name = Adrian Silva
+  email = adrian@ageda.net
 [color]
-	ui = auto
-	diff = auto
-	status = auto
-	branch = auto
+  ui = auto
+  diff = auto
+  status = auto
+  branch = auto
 [alias]
-	co = checkout
-	branch-graph = log --graph --pretty=oneline --abbrev-commit
+  co = checkout
+  branch-graph = log --graph --pretty=oneline --abbrev-commit
 [merge]
-	tool = suremerge
+  tool = suremerge
 [mergetool "suremerge"]
-	cmd = "\"/Applications/guiffy93/guiffyCL.command\" -s \"$LOCAL\" \"$REMOTE\" \"$BASE\" \"$MERGED\""
-	keepBackup = false
-	trustExitCode = false
+  cmd = "\"/Applications/guiffy93/guiffyCL.command\" -s \"$LOCAL\" \"$REMOTE\" \"$BASE\" \"$MERGED\""
+  keepBackup = false
+  trustExitCode = false
 [diff]
-	tool = guiffy
+  tool = guiffy
 [difftool "guiffy"]
-	cmd  = "\"/Applications/guiffy93/guiffyCL.command\" \"$LOCAL\" \"$REMOTE\""
+  cmd  = "\"/Applications/guiffy93/guiffyCL.command\" \"$LOCAL\" \"$REMOTE\""
 [push]
   default = tracking
 [rerere]
