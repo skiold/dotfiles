@@ -42,10 +42,11 @@ dotfiles.each do |source|
     end
     cp source, local_copy, :verbose => true
   end
-  desc "imports dotfiles from home dir"
+  desc "imports dotfiles from home into the dotfiles repo"
   task :import => local_copy
 end
 
+desc "updates home with the dotfiles dir content"
 task :export_to_homedir do
   dotfiles.each do |target|
     local_copy = target.sub(home_dir, dotfiles_dir)
