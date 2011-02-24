@@ -18,4 +18,5 @@ set hlsearch
 set incsearch
 set showmatch
 
+colorscheme koehler
 
