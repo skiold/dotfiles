@@ -23,4 +23,6 @@
 [difftool "guiffy"]
 	cmd  = "\"/Applications/guiffy93/guiffyCL.command\" \"$LOCAL\" \"$REMOTE\""
 [push]
-	default = tracking
+  default = tracking
+[rerere]
+  enabled = true
