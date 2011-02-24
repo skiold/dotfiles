@@ -1,4 +1,2 @@
 [src/git-template]
 checkout = https://github.com/MrJoy/git-template.git
-[src/topgit]
-checkout = http://repo.or.cz/r/topgit.git 
