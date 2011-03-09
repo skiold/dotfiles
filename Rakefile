@@ -11,7 +11,6 @@ dotfiles = FileList[
                  ".gitignore",
                  ".irssi/config",
                  ".mrconfig",
-                 ".vimrc",
                  ".offlineimaprc",
                  ".rvm/gemsets/default.gems",
                  ".sup/config.yaml",
@@ -20,6 +19,9 @@ dotfiles = FileList[
                  ".signature",
                  ".msmtprc",
                  ".gnupg/gpg.conf",
+                 ".vim/ftdetect/puppet.vim",
+                 ".vim/syntax/puppet.vim",
+                 ".vimrc",
              ].map do |dotfile_path|
   full_path = Pathname.new "~/" + dotfile_path
   full_path.expand_path
@@ -51,7 +53,7 @@ task :export_to_homedir do
   dotfiles.each do |target|
     local_copy = target.sub(home_dir, dotfiles_dir)
     unless target.parent.directory?
-      mkdir target.parent
+      mkdir_p target.parent
     end
     cp local_copy, target, :verbose => true
   end
