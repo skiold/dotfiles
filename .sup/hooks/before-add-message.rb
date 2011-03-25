@@ -18,6 +18,8 @@ end
  "twisted-web" => "List-Id: Twisted Web World <twisted-web\.twistedmatrix\.com>",
  "twisted-python" => "List-Id: Twisted general discussion <twisted-python\.twistedmatrix\.com>",
  "babushka_app" => "List-ID: <babushka_app\.googlegroups\.com>",
+ "soag" => "List-ID: <spain-openstack-user-group\.googlegroups\.com>",
+ "bufferbloat" => "<bloat-devel\.lists\.bufferbloat\.net>",
  }.each_pair do |list_label, list_regex| 
   if message.raw_header =~ /#{list_regex}/i
     message.add_label "list"
