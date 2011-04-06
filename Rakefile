@@ -19,6 +19,7 @@ dotfiles = FileList[
                  ".signature",
                  ".msmtprc",
                  ".gnupg/gpg.conf",
+                 ".gnupg/gpg-agent.conf",
                  ".vim/ftdetect/puppet.vim",
                  ".vim/syntax/puppet.vim",
                  ".vimrc",
