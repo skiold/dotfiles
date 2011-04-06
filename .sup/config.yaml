@@ -8,8 +8,6 @@
     :sendmail: msmtp --account=Ageda -t
     :name: Adrian Silva
     :alternates: 
-    - skiold@gmail.com
-    - adrian@bvox.net
     :email: adrian@ageda.net
     :signature: /Users/scyldinga/.signature
   :Ageda:
@@ -28,5 +26,5 @@
 :thread_by_subject: false
 :poll_interval: 300
 :confirm_no_attachments: true
-:edit_signature: false
+:edit_signature: true
 :wrap_width: 0
