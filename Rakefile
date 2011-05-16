@@ -9,6 +9,7 @@ dotfiles = FileList[
                  ".bash_profile",
                  ".gitconfig",
                  ".gitignore",
+                 ".git-completion.bash",
                  ".irssi/config",
                  ".mrconfig",
                  ".offlineimaprc",
