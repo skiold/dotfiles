@@ -1,6 +1,7 @@
 [general]
 accounts = GMail, Ageda
 maxsyncaccounts = 3
+pythonfile = ~/.offlineimap.py
 
 [Account GMail]
 localrepository = Local
@@ -26,6 +27,7 @@ localfolders = ~/Mail/Ageda
 type = Gmail 
 remotehost = imap.gmail.com
 remoteuser = skiold@gmail.com
+remotepasseval = skiold
 ssl = yes
 maxconnections = 1
 realdelete = true
@@ -35,6 +37,7 @@ folderfilter = lambda foldername: foldername in ['[Gmail]/All Mail', '[Gmail]/Se
 type = Gmail
 remotehost = imap.gmail.com
 remoteuser = adrian@ageda.net
+remotepasseval = ageda
 ssl = yes
 maxconnections = 1
 realdelete = true
