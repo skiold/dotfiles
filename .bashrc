@@ -32,7 +32,7 @@ if [ "$PS1" ]; then
     export TERM
 
 
-    export SESSION_NAME="tarena"
+    export SESSION_NAME="orendana"
     greenonwhite="\033[47m"
     PROMPT_COMMAND='rvm=$([[ -x ~/.rvm/bin/rvm-prompt ]] && ~/.rvm/bin/rvm-prompt i v p g s);\
                     echo -ne "\033]0;${SESSION_NAME}|\
