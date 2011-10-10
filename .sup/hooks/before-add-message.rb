@@ -21,6 +21,7 @@ end
  "babushka_app" => "List-ID: <babushka_app\.googlegroups\.com>",
  "soag" => "List-ID: <spain-openstack-user-group\.googlegroups\.com>",
  "bufferbloat" => "<bloat-devel\.lists\.bufferbloat\.net>",
+ "ruby-sec" => "List-ID: <rubyonrails-security\.googlegroups\.com>",
  }.each_pair do |list_label, list_regex| 
   if message.raw_header =~ /#{list_regex}/i
     message.add_label "list"
