@@ -71,9 +71,10 @@ channels = (
   { name = "#xen-api"; chatnet = "Freenode"; autojoin = "yes"; },
   { name = "#citrix"; chatnet = "Freenode"; autojoin = "yes"; },
   { name = "#madrid.pm"; chatnet = "perl"; autojoin = "yes"; },
-  { name = "#hispalinux"; chatnet = "Freenode"; autojoin = "No"; }
-  { name = "#babushka"; chatnet = "Freenode"; autojoin = "yes"; }
-  { name = "#emerging-threats"; chanten = "Freenode"; autojoin = "No"; }
+  { name = "#hispalinux"; chatnet = "Freenode"; autojoin = "No"; },
+  { name = "#babushka"; chatnet = "Freenode"; autojoin = "yes"; },
+  { name = "##valencia-hack"; chatnet = "Freenode"; autojoin = "yes"; },
+  { name = "#emerging-threats"; chatnet = "Freenode"; autojoin = "No"; }
 );
 
 aliases = {
