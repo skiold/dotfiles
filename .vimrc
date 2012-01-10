@@ -19,4 +19,4 @@ set incsearch
 set showmatch
 
 colorscheme koehler
-
+set backupdir=~/.vim/backup/
