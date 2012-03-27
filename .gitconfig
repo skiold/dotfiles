@@ -14,6 +14,7 @@
   branch-graph = log --graph --pretty=oneline --abbrev-commit
 [merge]
   tool = suremerge
+  conflictstyle = diff3
 [mergetool "suremerge"]
   cmd = "\"/Applications/guiffy93/guiffyCL.command\" -s \"$LOCAL\" \"$REMOTE\" \"$BASE\" \"$MERGED\""
   keepBackup = false
