@@ -1,9 +1,9 @@
 [core]
-  excludesfile = "/Users/scyldinga/.gitignore"
+  excludesfile = "/Users/adrian/.gitignore"
 
 [user]
   name = Adrian Silva
-  email = adrian@ageda.net
+  email = adrian@peertransfer.com
 [color]
   ui = auto
   diff = auto
@@ -14,6 +14,7 @@
   branch-graph = log --graph --pretty=oneline --abbrev-commit
 [merge]
   tool = suremerge
+  conflictstyle = diff3
 [mergetool "suremerge"]
   cmd = "\"/Applications/guiffy93/guiffyCL.command\" -s \"$LOCAL\" \"$REMOTE\" \"$BASE\" \"$MERGED\""
   keepBackup = false
