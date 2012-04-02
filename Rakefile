@@ -4,6 +4,7 @@ dotfiles = FileList[
                  ".bashrc",
                  ".bashrc.d/gitcircling.bash",
                  ".bashrc.d/rvm.bash",
+                 ".bashrc.d/ssh-completion.bash",
                  ".bash_profile",
                  ".gitconfig",
                  ".gitignore",
