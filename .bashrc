@@ -44,6 +44,9 @@ $(date "+%y%m%d %H:%M")\
 
     PS1='\u@\h '
 
+    export EDITOR="vim"
+    export VISUAL="vim"
+
     for extra_rc in ~/.bashrc.d/*.bash ; do
         source ${extra_rc}
     done
