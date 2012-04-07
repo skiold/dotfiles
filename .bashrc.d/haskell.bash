@@ -1,4 +1,4 @@
 
 haskell.up() {
-  export PATH="/opt/haskell/bin:${PATH}:/opt/local/libexec/gnubin"
+  export PATH="${HOME}/.cabal/bin:/opt/haskell/bin:${PATH}:/opt/local/libexec/gnubin"
 }
