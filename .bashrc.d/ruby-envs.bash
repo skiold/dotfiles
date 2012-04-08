@@ -5,5 +5,5 @@ rvm.up() {
 }
 
 rbenv.up() {
-  [[ -s "$HOME/.rbenv/bin" ]] && export PATH="$HOME/.rbenv/bin:$PATH"
+  [[ -s "$HOME/.rbenv/bin" ]] && export PATH="$HOME/.rbenv/bin:$HOME/.rbenv/shims:$PATH"
 }
