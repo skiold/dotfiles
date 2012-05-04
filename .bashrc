@@ -32,11 +32,9 @@ if [ "$PS1" ]; then
     export TERM
 
 
-    export SESSION_NAME="orendana"
+    export SESSION_NAME="taric"
     greenonwhite="\033[33m"
-    PROMPT_COMMAND='rvm=$([[ -x ~/.rvm/bin/rvm-prompt ]] && ~/.rvm/bin/rvm-prompt i v p g s);\
-                    echo -ne "\033]0;${SESSION_NAME}|\
-rvm:$rvm|\
+    PROMPT_COMMAND='echo -ne "\033]0;${SESSION_NAME}|\
 $(__git_ps1 "branch:%s")|\
 $(date "+%y%m%d %H:%M")\
 \007";\
