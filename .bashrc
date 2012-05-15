@@ -47,6 +47,16 @@ $(date "+%y%m%d %H:%M")\
     export EDITOR="vim"
     export VISUAL="vim"
 
+    add_things_up() {
+      local thing=$1
+      export THINGS_UP="${THINGS_UP}\n$(date -u "+%Y%m%d %H:%M UTC") ${thing}"
+    }
+    things_already_up() {
+      echo -e ${THINGS_UP}
+    }
+    [ "${THINGS_UP}x" == "x" ] && \
+      export THINGS_UP="Session started $(date -u "+%Y%m%d %H:%M UTC")\n\n-- Things up --"
+
     for extra_rc in ~/.bashrc.d/*.bash ; do
         source ${extra_rc}
     done
