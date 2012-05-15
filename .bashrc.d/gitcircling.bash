@@ -1,5 +1,5 @@
 
-gitcircling.up() {
+gitcircling_up() {
   TOPGIT_PREFIX="/opt/tools/topgit"
   GIT_TEMPLATE_PREFIX="~/src/git-template"
   GIT_PROJECT_TEMPLATE_DIRECTORY="${GIT_TEMPLATE_PREFIX}/template"
