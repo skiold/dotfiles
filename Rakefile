@@ -41,7 +41,7 @@ end
 
 
 dotfiles.each do |source|
-  local_copy = source.sub(home_dir, dotfiles_dir)
+  local_copy = source.sub(home_dir.to_s, dotfiles_dir.to_s)
   file local_copy => source do
     unless local_copy.parent.directory?
       mkdir local_copy.parent
@@ -55,7 +55,7 @@ end
 desc "updates home with the dotfiles dir content"
 task :export_to_homedir do
   dotfiles.each do |target|
-    local_copy = target.sub(home_dir, dotfiles_dir)
+    local_copy = target.sub(home_dir.to_s, dotfiles_dir.to_s)
     unless target.parent.directory?
       mkdir_p target.parent
     end
