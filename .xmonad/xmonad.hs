@@ -37,7 +37,7 @@ myBorderWidth   = 1
 -- ("right alt"), which does not conflict with emacs keybindings. The
 -- "windows key" is usually mod4Mask.
 --
-myModMask       = mod2Mask
+myModMask       = mod1Mask
 
 -- The default number of workspaces (virtual screens) and their names.
 -- By default we use numeric strings, but any string may be used as a
@@ -261,9 +261,9 @@ defaults = defaultConfig {
 
       -- hooks, layouts
         layoutHook         = myLayout,
-        logHook = myLogHook,
         manageHook         = myManageHook <+> manageDocks,
         handleEventHook    = myEventHook,
+        logHook            = myLogHook,
         startupHook        = myStartupHook
     }
 
@@ -273,7 +273,7 @@ defaults = defaultConfig {
 -- Run xmonad with the settings you specify. No need to modify this.
 --
 main = do
-    xmproc <- spawnPipe "/home/scyldinga/.cabal/bin/xmobar /home/scyldinga/.xmobarrc"
+    xmproc <- spawnPipe "/usr/bin/xmobar /home/asf/.xmobarrc"
     xmonad $ defaults
         { layoutHook = avoidStruts $ layoutHook defaults
         , logHook = dynamicLogWithPP xmobarPP
