@@ -22,6 +22,8 @@ dotfiles = FileList[
                  ".msmtprc",
                  ".gnupg/gpg.conf",
                  ".gnupg/gpg-agent.conf",
+                 ".xinitrc",
+                 ".Xresources",
                  ".vim/after/ftplugin/c.vim",
                  ".vim/ftdetect/puppet.vim",
                  ".vim/syntax/puppet.vim",
