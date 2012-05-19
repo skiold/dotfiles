@@ -6,6 +6,7 @@ dotfiles = FileList[
                  ".bashrc.d/ruby-envs.bash",
                  ".bashrc.d/haskell.bash",
                  ".bashrc.d/perlbrew.bash",
+                 ".bashrc.d/ssh-agent.bash",
                  ".bashrc.d/ssh-completion.bash",
                  ".bash_profile",
                  ".gitconfig",
