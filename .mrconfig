@@ -7,13 +7,16 @@ checkout = git clone git@github.com:skiold/dotfiles.git
 update =
   git checkout master &&
   git pull &&
-  git checkout tarena--macosx-leopard &&
+  git checkout tarena--sqeeze-powerpc &&
   git rebase master
 push =
   git checkout master &&
   git push &&
-  git checkout tarena--macosx-leopard &&
+  git checkout tarena--squeeze-powerpc &&
   git push --force
 
-[Documents/research]
-checkout = /Users/scyldinga/Dropbox/remotes/research.git
+[docs/research]
+checkout = /media/intercambio/remotes/research.git
+
+[docs/org]
+checkout = /media/intercambio/remotes/org-gtd.git
