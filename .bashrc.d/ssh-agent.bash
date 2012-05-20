@@ -55,6 +55,10 @@ function sshagent_init {
     # start a new one
     if [ $AGENTFOUND = 0 ] ; then
         eval `ssh-agent`
+        if echo "$THINS_UP" | grep -qv "Ssh-agent PID: ${SSH_AGENT_PID}" ; then
+          [[ -s "$HOME/.rbenv/bin" ]] && export PATH="$HOME/.rbenv/bin:$HOME/.rbenv/shims:$PATH"
+          add_things_up "Ssh-agent PID: ${SSH_AGENT_PID}"
+        fi
     fi
 
     # Clean up
