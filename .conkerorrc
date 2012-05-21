@@ -1,0 +1,4 @@
+
+define_webjump("github", "http://github.com/search?q=%s&type=Everything");
+define_webjump("duck", "https://duckduckgo.com/?q=%s");
+
