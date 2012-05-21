@@ -1,0 +1,5 @@
+#!/bin/bash
+
+set -x
+sudo mkdir -p /media/tarena
+sudo mount /dev/sda12 /media/tarena
