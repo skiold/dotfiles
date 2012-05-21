@@ -14,11 +14,12 @@ servers = (
   },
   { address = "irc.oftc.net"; chatnet = "OFTC"; port = "6667"; },
   {
-    address = "irc.freenode.net";
+    address = "chat.freenode.net";
     chatnet = "Freenode";
-    port = "6697";
-    ssl_verify = "yes";
-    autoconnect = "yes";
+    port = "7000";
+    use_ssl = "yes";
+    ssl_verify = "off";
+    autoconnect = "no";
   },
   {
     address = "irc.perl.org";
@@ -69,12 +70,11 @@ channels = (
   { name = "#infra-talk"; chatnet = "Freenode"; autojoin = "yes"; },
   { name = "##xen"; chatnet = "Freenode"; autojoin = "yes"; },
   { name = "#xen-api"; chatnet = "Freenode"; autojoin = "yes"; },
-  { name = "#citrix"; chatnet = "Freenode"; autojoin = "yes"; },
   { name = "#madrid.pm"; chatnet = "perl"; autojoin = "yes"; },
   { name = "#hispalinux"; chatnet = "Freenode"; autojoin = "No"; },
   { name = "#babushka"; chatnet = "Freenode"; autojoin = "yes"; },
   { name = "##hackvalencia"; chatnet = "Freenode"; autojoin = "yes"; },
-  { name = "#emerging-threats"; chatnet = "Freenode"; autojoin = "No"; }
+  { name = "#emerging-threats"; chatnet = "Freenode"; autojoin = "yes"; }
 );
 
 aliases = {
@@ -112,7 +112,7 @@ aliases = {
   UMODE = "mode $N";
   WC = "window close";
   WN = "window new hide";
-  SV = "say Irssi $J ($V) - http://irssi.org/";
+  SV = "say MacIrssi 0.8.6.6";
   GOTO = "sb goto";
   CHAT = "dcc chat";
   RUN = "SCRIPT LOAD";
@@ -239,8 +239,13 @@ statusbar = {
   };
 };
 settings = {
-  core = { real_name = ""; user_name = "adrian"; nick = "skiold"; };
+  core = {
+    real_name = "Adrian Silva";
+    user_name = "adrian";
+    nick = "skiold";
+  };
   "fe-text" = { actlist_sort = "refnum"; };
   "irc/core" = { alternate_nick = "scyldinga"; };
 };
 hilights = ( { text = "nick"; nick = "yes"; word = "yes"; } );
+logs = { };
