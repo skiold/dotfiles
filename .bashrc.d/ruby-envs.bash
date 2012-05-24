@@ -8,7 +8,7 @@ rvm_up() {
 }
 
 rbenv_up() {
-  if echo "$THINS_UP" | grep -qv "Rbenv: $(rbenv 2>&1 | head -n 1)" ; then
+  if echo "$THINGS_UP" | grep -qv "Rbenv: $(rbenv 2>&1 | head -n 1)" ; then
     [[ -s "$HOME/.rbenv/bin" ]] && export PATH="$HOME/.rbenv/bin:$HOME/.rbenv/shims:$PATH"
     add_things_up "Rbenv: $(rbenv 2>&1 | head -n 1)"
   fi
