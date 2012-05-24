@@ -51,11 +51,23 @@ $(date "+%y%m%d %H:%M")\
       local thing=$1
       export THINGS_UP="${THINGS_UP}\n$(date -u "+%Y%m%d %H:%M UTC") ${thing}"
     }
+    register_things_available() {
+      local thing=$1
+      local description=$2
+      local version=$3
+
+      export THINGS_AVAILABLE="${THINGS_AVAILABLE}\n${thing} ${description} ${version}"
+    }
+    things_available() {
+      echo -e "${THINGS_AVAILABLE}"
+    }
     things_already_up() {
-      echo -e ${THINGS_UP}
+      echo -e "${THINGS_UP}"
     }
     [ "${THINGS_UP}x" == "x" ] && \
       export THINGS_UP="Session started $(date -u "+%Y%m%d %H:%M UTC")\n\n-- Things up --"
+    [ "${THINGS_AVAILABLE}x" == "x" ] && \
+      export THINGS_AVAILABLE="Shell things available:\n"
 
     for extra_rc in ~/.bashrc.d/*.bash ; do
         source ${extra_rc}
