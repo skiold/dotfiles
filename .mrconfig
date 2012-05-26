@@ -20,3 +20,6 @@ checkout = /media/intercambio/remotes/research.git
 
 [docs/org]
 checkout = /media/intercambio/remotes/org-gtd.git
+
+[devel/ml-course]
+checkout = /media/intercambio/remotes/2012_ml-course.git
