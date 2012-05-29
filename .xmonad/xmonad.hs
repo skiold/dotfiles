@@ -8,6 +8,11 @@
 --
 
 import XMonad
+import XMonad.Hooks.DynamicLog
+import XMonad.Hooks.ManageDocks
+import XMonad.Util.Run(spawnPipe)
+import XMonad.Util.EZConfig(additionalKeys)
+import System.IO
 import Data.Monoid
 import System.Exit
 
@@ -221,14 +226,6 @@ myManageHook = composeAll
 myEventHook = mempty
 
 ------------------------------------------------------------------------
--- Status bars and logging
-
--- Perform an arbitrary action on each internal state change or X event.
--- See the 'XMonad.Hooks.DynamicLog' extension for examples.
---
-myLogHook = return ()
-
-------------------------------------------------------------------------
 -- Startup hook
 
 -- Perform an arbitrary action each time xmonad starts or is restarted
@@ -238,12 +235,9 @@ myLogHook = return ()
 -- By default, do nothing.
 myStartupHook = return ()
 
-------------------------------------------------------------------------
--- Now run xmonad with all the defaults we set up.
+myLogHook = return()
 
--- Run xmonad with the settings you specify. No need to modify this.
---
-main = xmonad defaults
+
 
 -- A structure containing your configuration settings, overriding
 -- fields in the default config. Any you don't override, will
@@ -267,8 +261,23 @@ defaults = defaultConfig {
 
       -- hooks, layouts
         layoutHook         = myLayout,
-        manageHook         = myManageHook,
+        logHook = myLogHook,
+        manageHook         = myManageHook <+> manageDocks,
         handleEventHook    = myEventHook,
-        logHook            = myLogHook,
         startupHook        = myStartupHook
     }
+
+------------------------------------------------------------------------
+-- Now run xmonad with all the defaults we set up.
+
+-- Run xmonad with the settings you specify. No need to modify this.
+--
+main = do
+    xmproc <- spawnPipe "/home/scyldinga/.cabal/bin/xmobar /home/scyldinga/.xmobarrc"
+    xmonad $ defaults
+        { layoutHook = avoidStruts $ layoutHook defaults
+        , logHook = dynamicLogWithPP xmobarPP
+            { ppOutput = hPutStrLn xmproc
+            , ppTitle = xmobarColor "green" "" . shorten 50
+            }
+        }
