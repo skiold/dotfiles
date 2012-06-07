@@ -1,6 +1,6 @@
 Config {
         -- from http://karuppuswamy.com/wordpress/2011/09/03/how-to-get-a-productive-desktop-based-on-xmonad-and-xmobar/
-        , bgColor = "black"
+          bgColor = "black"
         , fgColor = "grey"
         , position = TopW L 95
         , sepChar = "%"
