@@ -1,3 +1,9 @@
+[/Volumes/Intercambio]
+checkout = [ -d /Volumes/Intercambion ]
+order = 1
+update = sudo chown -R scyldinga /Volumes/Intercambio
+#skip = [ "$MR_ACTION" != "update" ]
+
 [src/git-template]
 checkout = https://github.com/MrJoy/git-template.git
 push = echo "noway!"
@@ -7,9 +13,14 @@ checkout =
   git clone agedabot:~/gitrepos/ageda--fnord-money-dashboard  fnord-money-dashboard &&
   cd fnord-money-dashboard &&
   git branch heroku-deploy origin/heroku-deploy
+
 push =
   git push origin master:master
   git push origin heroku-deploy:heroku-deploy
+
+[devel/ageda-infra/babushka-private]
+checkout =
+  git clone agedabot:~/gitrepos/skiold-babushka--private-deps babushka-private-deps
 
 [dotfiles]
 checkout = git clone git@github.com:skiold/dotfiles.git
@@ -25,4 +36,7 @@ push =
   git push --force
 
 [Documents/research]
-checkout = /Users/scyldinga/Dropbox/remotes/research.git
+checkout = git clone agedabot:~/gitrepos/ikiwiki--research-main--20120804
+
+[Dropbox/org-gtd]
+checkout = git clone agedabot:~/gitrepos/orgmode--gtd-agenda--20120822
