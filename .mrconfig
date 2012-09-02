@@ -15,11 +15,10 @@ push =
   git checkout tarena--squeeze-powerpc &&
   git push --force
 
-[docs/research]
+[priv/research]
 checkout = /media/intercambio/remotes/research.git
-
-[docs/org]
-checkout = /media/intercambio/remotes/org-gtd.git
+[priv/gtd-agenda]
+checkout = git clone agedabot@ageda.net:gitrepos/orgmode--gtd-agenda--20120822 gtd-agenda
 
 [devel/ml-course]
 checkout = /media/intercambio/remotes/2012_ml-course.git
