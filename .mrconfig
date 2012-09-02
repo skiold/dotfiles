@@ -7,12 +7,12 @@ checkout = git clone git@github.com:skiold/dotfiles.git
 update =
   git checkout master &&
   git pull &&
-  git checkout tarena--squeeze-powerpc &&
+  git checkout l016int--arch-amd64 &&
   git rebase master
 push =
   git checkout master &&
   git push &&
-  git checkout tarena--squeeze-powerpc &&
+  git checkout l016int--arch-amd64 &&
   git push --force
 
 [priv/research]
