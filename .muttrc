@@ -1,0 +1,22 @@
+set nm_default_uri="notmuch:///home/asf/Mail"
+set virtual_spoolfile = yes
+
+# normal folders
+set mbox_type=Maildir
+set folder="~/Mail/taric.es"
+set sort=threads
+mailboxes =INBOX
+
+# sidebar
+set sidebar_width = 35
+set sidebar_visible = yes
+color sidebar_new yellow default
+bind index <left> sidebar-prev
+bind index <right> sidebar-next
+bind index <space> sidebar-open
+bind index <Esc>S sidebar-toggle
+
+# virtual folders
+virtual-mailboxes \
+  "INBOX"           "notmuch://?type=threads&query=tag:inbox and NOT tag:archive"
+
