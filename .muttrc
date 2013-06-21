@@ -1,11 +1,16 @@
-set nm_default_uri="notmuch:///home/asf/Mail"
+set sendmail="ssh -p 48001 lin-mail /usr/sbin/sendmail.exim"
+set from="Adrian Silva <adrians@aptivate.org>"
+set nm_default_uri="notmuch:///home/adrians/Mail"
 set virtual_spoolfile = yes
+
+set alias_file = ~/.mutt/aliases
+source $alias_file
 
 # normal folders
 set mbox_type=Maildir
-set folder="~/Mail/taric.es"
+set folder="~/Mail/Aptivate"
 set sort=threads
-mailboxes =INBOX
+mailboxes =INBOX =sent =INBOX.sent
 
 # sidebar
 set sidebar_width = 35
@@ -16,7 +21,14 @@ bind index <right> sidebar-next
 bind index <space> sidebar-open
 bind index <Esc>S sidebar-toggle
 
+macro index E ";<modify-labels-then-hide>-inbox +archive\n<sync-mailbox>"
+macro index L ";<modify-labels>+"
 # virtual folders
 virtual-mailboxes \
-  "INBOX"           "notmuch://?type=threads&query=tag:inbox and NOT tag:archive"
+  "INBOX"           "notmuch://?type=threads&query=tag:inbox and NOT tag:archive" \
+  "Monitors"        "notmuch://?type=threads&query=tag:monitors and NOT tag:archive" \
+  "Client"          "notmuch://?type=threads&query=tag:client and NOT tag:archive" \
+  "JuicyChat"       "notmuch://?type=thread&query=tag:juicy" \
+  "Econsensus"      "notmuch://?type=thread&query=tag:econsensus" \
+  "cdkn"            "notmuch://?type=thread&query=tag:cdkn"
 
